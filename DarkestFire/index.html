@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Darkest Fire</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6b4d637310.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div id="EnTete">
+                <div id="BlocTitre">
+                    <div id="Title">
+                        <img class="Fire" src="GIF/fire8_anim.gif" alt="Fire">
+                        <h1 id="MainTitle">Darkest Fire</h1>
+                            <svg id="effect">
+                                <filter id="maintitle">
+                                    <feTurbulence id="Turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                                        <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2" repeatCount="indefinite"></animate>
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" scale="10"></feDisplacementMap>
+                                </filter>
+                            </svg>
+                        <img class="Fire" src="GIF/fire8_anim.gif" alt="Fire">
+                    </div>
+                    <p class="txtentete">Now Available</p>
+                    <div id="Logos">
+                        <img class="steam" src="./Logos/store_logos__0004_Layer-8.png" alt="Steam">
+                        <img class="ps4" src="./Logos/store_logos__0005_Layer-2.png" alt="PS4">         
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id=Part1>
+            <div id="Bloc1">
+                <p class="presentation">In the Age of Ancients the world was unformed, shrouded by fog. A land of gray crags, Archtrees and Everlasting Dragons. But then there was Fire and with fire came disparity. Heat and cold, life and death, and of course, light and dark. Then from the dark, They came, and found the Souls of Lords within the flame.</p>
+            </div>
+            <div id="Bloc2">
+                <p class="subscribe">SUBSCRIBE, GET UPDATES ON OFFERS AND THE UPCOMING DLCs!</p>
+                <p class="subtxt">We only send one or two emails each month. We won't share this email with anybody.<br/><br/>EMAIL</p>
+                <input type="email" class="mailbarre">    
+                <button type="submit" class="subbutton">SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <div id="Part2">
+            <span class="border bis"></span>
+            <h2 class="secondary">TRAILER</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_zDZYrIUgKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="Part3">
+            <span class="border"></span>
+            <h2 class="secondary">SCREENSHOTS</h2>
+            <div id="Screens">
+                <img class="provisoire" src="./Images/Provisoire.webp" alt="Prépa">
+                <img class="provisoire" src="./Images/Provisoire.webp" alt="Prépa">
+                <img class="provisoire" src="./Images/Provisoire.webp" alt="Prépa">
+                <img class="provisoire" src="./Images/Provisoire.webp" alt="Prépa">
+            </div>
+        </div>
+
+        <footer>
+            <div id="FootBox">
+                <div id=FootLogos>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-youtube-square"></i>
+                </div>
+            </div>
+        </footer>
+            
+    </body>
+</html>
