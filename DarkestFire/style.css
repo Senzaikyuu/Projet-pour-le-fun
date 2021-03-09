@@ -1,14 +1,25 @@
 body
 {
     font-family: 'Shippori Mincho', serif;
-    background-color: rgb(41, 39, 39);
     margin: 0;
     cursor: default;
 }
 
+#container
+{
+    background-color: rgb(21, 21, 21);
+}
+
 #EnTete
 {
-    background-image: url();
+    padding-top: 300px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 10px black inset,
+                0 0 40px black inset,
+                0 0 80px black inset;
+    background-image: url(./Images/BackGround.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #BlocTitre
@@ -16,10 +27,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    box-shadow: 0 0 10px black inset,
-                 0 0 40px black inset,
-                 0 0 80px black inset;              
+    flex-direction: column;        
 }
 
 #Title
@@ -34,10 +42,10 @@ body
 #MainTitle
 {
     font-family: 'Cormorant Unicase', serif;
-    font-size: 80px;
+    font-size: 120px;
     margin-left: 10px;
     letter-spacing: 10px;
-    background:-webkit-linear-gradient(top, black, rgb(109, 107, 107));
+    background:-webkit-linear-gradient(top, black, rgb(61, 57, 57));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -60,14 +68,14 @@ body
     font-size: 60px;
     font-weight: bold;
     text-shadow: black 1px 0 10px;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .Fire
 {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 45px;
     filter: url(#maintitle);
 }
 
@@ -87,6 +95,7 @@ body
 {
     font-style: italic;
     text-align: justify;
+    color: whitesmoke;
 }
 
 #Part1
@@ -94,6 +103,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 10px;
 }
 
 #Bloc1
@@ -115,14 +125,16 @@ body
 .subscribe
 {
     font-weight: bold;
-    text-shadow: black 1px 0 10px;
+    text-shadow: whitesmoke 1px 0 10px;
     text-align: justify;
+    color: whitesmoke;
 }
 
 .subtxt
 {
     font-size: 12px;
     text-align: justify;
+    color: whitesmoke;
 }
 
 .mailbarre
@@ -159,7 +171,8 @@ body
     background-color: transparent;
     border: solid black 2px;
     font-weight: bold;
-    text-shadow: black 1px 0 15px;
+    text-shadow: whitesmoke 1px 0 5px;
+    letter-spacing: 1px;
     padding-top: 5px;
     padding-bottom: 5px;
     outline-style: none;
@@ -176,7 +189,7 @@ body
     border: solid 2px black;
     width: 200px;
     height: 10px;
-    box-shadow: 0 0 10px inset;
+    box-shadow: 0 0 10px whitesmoke inset;
 }
 
 .bis
@@ -192,17 +205,38 @@ body
     margin-top: 40px;
 }
 
+.align
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .secondary
 {
     font-weight: bold;
-    text-shadow: black 1px 0 10px;
+    text-shadow: whitesmoke 1px 0 10px;
     font-size: 40px;
     margin-top: 0px;
+    color: whitesmoke;
+}
+
+#amenagement
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #video
 {
     border: solid black 2px;
+    width: 40%;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #Part3
@@ -211,6 +245,7 @@ body
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 #Screens
@@ -239,11 +274,16 @@ body
 
 #FootBox
 {
-    margin-top: 40px;
     height: 200px;
     box-shadow: 0 0 10px black inset,
                  0 0 40px black inset,
                  0 0 80px black inset;
+    background-image: url(./Images/BackGround.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #FootLogos
@@ -252,8 +292,21 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 125px;
+}
 
+#opacity
+{
+    width: 300px;
+    background-color: whitesmoke;
+    opacity: 0.3;
+    height: 100px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 10px whitesmoke inset,
+                0 0 40px whitesmoke inset,
+                0 0 80px whitesmoke inset;
+            
 }
 
 .fab
