@@ -240,6 +240,11 @@ body
     margin-right: 100px;
 }
 
+#video:hover
+{
+    border: solid whitesmoke 2px;
+}
+
 #Part3
 {
     display: flex;
@@ -271,6 +276,7 @@ body
     transform: scale(1.05);
     transition: transform 0.5s;
     cursor: pointer;
+    border: solid whitesmoke 2px;
 }
 
 #FootBox
