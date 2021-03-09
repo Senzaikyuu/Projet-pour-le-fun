@@ -146,6 +146,7 @@ body
     padding-top: 5px;
     padding-bottom: 5px;
     outline-style: none;
+    color: whitesmoke;
 }
 
 .mailbarre:focus
